@@ -10,11 +10,15 @@ const secondArr = [1,2,3];
 //create a empty array
 // through a for, push every element using firstArr[i] and secondArr[i]
 
-const mixArr = [];
-
-for (let i = 0; i < firstArr.length; i++) {
-    mixArr.push(firstArr[i],secondArr[i])
+function mix(firstArr,secondArr) {
+    const mixArr = [];
     
+    for (let i = 0; i < firstArr.length; i++) {
+        mixArr.push(firstArr[i],secondArr[i])
+        
+    }
+    return mixArr
 }
-console.log(mixArr);
 
+const finalArr = mix(firstArr,secondArr);
+console.log(finalArr);
