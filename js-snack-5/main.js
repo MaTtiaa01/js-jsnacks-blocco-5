@@ -11,8 +11,9 @@ const numb2 = 9;
 function pickNumb(array,numb1,numb2) {
     
     const newArr = [];
-    array.forEach(element => {
-        if (element > 4 && element < 9) {
+    array.forEach((element) => {
+        console.log(element);
+        if (element > numb1 && element < numb2) {
             newArr.push(element)
         }
     });
